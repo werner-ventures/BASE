@@ -1,4 +1,5 @@
-FROM gcr.io/deeplearning-platform-release/base-cu101
+FROM ubuntu:18.04
+--add in deep learning container contents
 RUN apt update -y && \
     apt install -y --reinstall openmpi-bin libopenmpi-dev libhdf5-openmpi-dev apt-transport-https && \
     apt-get install -y --no-install-recommends build-essential clang mono-complete ca-certificates curl file g++ git locales make uuid-runtime && \
